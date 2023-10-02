@@ -1,0 +1,39 @@
+<!--Jameson Brown-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Pic</title>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="MoveScript.js"></script>
+</head>
+
+<body>
+<h1>
+    Heres a funny dog!
+</h1>
+<p style="font-size: larger; font-weight: bold;">
+  Move the dog!
+</p>
+<p>
+        Warning: Will play sound below!
+    </p>
+    <br>
+    <!--Brings up audio controls-->
+    <audio controls>
+        <!--chooses source for audio-->
+    <source src = "cowGoMoo.mp3" type = "audio/mpeg"></source>
+    </audio>
+    <br>
+    <!--starts and stops functions-->
+    <button id="start"  onclick = "intervalStart();">Start</button>
+    <button id = "stop" onclick = "intervalStop();">STOP</button>
+    <br>
+    
+    <div id = "msg"></div>
+
+    <br>
+    <img src = "IMAGES/nikki.jpg" id = "memeImg" style = "position:absolute; top: 295px; left: 780px;"/>
+</body>
+</html>
